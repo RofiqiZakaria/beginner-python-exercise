@@ -64,12 +64,12 @@ def jarakDgnHariIni(self):
     umurHari = hariIni - hariTarget  
     return umurHari.days
 
-# def kalkulasi(self):
-    # lenWeton = len(self.daftarWeton())
-    # tglTarget = self.jarakHariTemplate()
-    # wetonTarget = self.daftarWeton()[tglTarget%lenWeton]
-    # neptuTarget = self.daftarNeptu()[tglTarget%lenWeton].capitalize()
-    # neptuAngkaTarget = self.neptuAngka(wetonTarget)
+def kalkulasi(self):
+    lenWeton = len(self.daftarWeton())
+    tglTarget = self.jarakHariTemplate()
+    wetonTarget = self.daftarWeton()[tglTarget%lenWeton]
+    neptuTarget = self.daftarNeptu()[tglTarget%lenWeton].capitalize()
+    neptuAngkaTarget = self.neptuAngka(wetonTarget)
 
 def informasi(self):
     hariTarget = dt.date(self.__varThn, self.__varBln, self.__varTgl)
@@ -103,5 +103,6 @@ def usia(self):
 if __name__ == '__main__':
     lahirku = Weton(29,10,1995)
     lahirku.info()
-    # print (lahirku.usia())
-    # print (lahirku.hasilWeton())
+    print (lahirku.usia())
+    print (lahirku.hasilWeton())
+    

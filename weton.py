@@ -103,6 +103,9 @@ class Weton:
 if __name__ == '__main__':
     lahirku = Weton(29,10,1995)
     lahirku.info()
-    print (lahirku.usia())
     print (lahirku.hasilWeton())
+    print ("<<<< * >>>>")
+    lahirmu = Weton(9,4,1997)
+    lahirmu.info()
+    print (lahirmu.hasilWeton())
     

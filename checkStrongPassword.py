@@ -40,5 +40,9 @@ class CheckStrongPassword:
 if __name__ == '__main__':
     kodeku = CheckStrongPassword('P@55word And4 ')
     kodemu = CheckStrongPassword('P@55word aND4 ')
+    kodekita = CheckStrongPassword("A1nul M4t@'un")
+    kodekami = CheckStrongPassword('P@sswd 0ur ')
     kodeku.info()
     kodemu.info()
+    kodekita.info()
+    kodekami.info()
